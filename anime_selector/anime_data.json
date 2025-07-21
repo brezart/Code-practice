@@ -15,5 +15,12 @@
         "udpated": 0,
         "base_url_index": 10218,
         "episode_count": "3"
+    },
+    "demon slayer": {
+        "type": "shonen",
+        "link": "https://9animetv.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=",
+        "udpated": "Sun Jul 20 21:47:45 EDT 2025\n",
+        "base_url_index": 1279,
+        "episode_count": "0"
     }
 }

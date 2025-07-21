@@ -19,7 +19,7 @@ def generate_new_link(base_index: int, link: str, episode_count: str):
 
 print('''please make your selection
     - list 
-    - add anime
+    - add
     - <anime name>''')
 selection = input()
 
@@ -27,6 +27,7 @@ if selection == "help":
     print('''
         options are:
         - list
+        - add anime
         - <name>
         ''')
 
@@ -35,7 +36,7 @@ if selection == 'list':
     for entry in data:
         print("- ", entry)
 
-elif selection == "add anime":
+elif selection == "add":
     add_new_anime.main(data=data)
 
 elif data[selection]:
