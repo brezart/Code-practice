@@ -1,6 +1,7 @@
 still needs to be able to:
+- [x] delete an entry
 - open to to the specific episode you are on.
 - be able to select any epp at the time of selection. 
 - add a surprise me option that chooses the next epp of one of the entries in the dict
 - update each field in the entry like adding a new link
-- clean up the god-awful python implementation. - probably classes would be useful here. 
+- clean up the god-awful python implementation. 
