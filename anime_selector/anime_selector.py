@@ -1,9 +1,32 @@
 import json
 import os
-import add_new_anime
+import anime_functions 
 
 with open('anime_data.json', 'r') as file:
     data = json.load(file)
+
+
+# class entry:
+#     def __init__(self, name: str , link: str, updated, base_url_index: int, episode_count: int):
+#         self.name = name
+#         self.link = link
+#         self.updated = updated
+#         self.base_url_index = base_url_index    
+#         self.episode_count = episode_count
+
+#     def add(self):
+#         data.update({
+#             name: {
+#                 "type": type,
+#                 "link": link,
+#                 "udpated": updated,
+#                 "base_url_index": base_url_index,
+#                 "episode_count": episode_count
+#             }
+#         })
+    
+    # def delete(self):
+    #     delete stuff 
 
 def update_ep_count(episode_count: str, link: str):
 
@@ -29,6 +52,7 @@ if selection == "help":
         - list
         - add anime
         - <name>
+        - remove 
         ''')
 
 if selection == 'list':
@@ -37,8 +61,11 @@ if selection == 'list':
         print("- ", entry)
 
 elif selection == "add":
-    add_new_anime.main(data=data)
+   anime_functions.add(data=data)
 
+elif selection == "delete":
+    anime_functions.delete(data=data)
+    
 elif data[selection]:
 
     #set values

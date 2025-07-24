@@ -9,13 +9,6 @@
     "bleach": {
         "link": "google.com/bleach"
     },
-    "dragon ball z": {
-        "type": "action/shonen",
-        "link": "https://9animetv.to/watch/dragon-ball-509?ep=",
-        "udpated": 0,
-        "base_url_index": 10218,
-        "episode_count": "3"
-    },
     "demon slayer": {
         "type": "shonen",
         "link": "https://9animetv.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=",
