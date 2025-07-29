@@ -1,5 +1,8 @@
 import os 
 import subprocess
+import numpy as np
+import time 
+import random
 
 def gather_data():
 
@@ -34,7 +37,7 @@ def add(data) -> None:
         name: {
             "type": type,
             "link": link,
-            "udpated": updated,
+            "updated": updated,
             "base_url_index": base_url_index,
             "episode_count": ep_count
         }
@@ -61,3 +64,18 @@ def delete(data):
             print(f"Okay, we won't delete {name}")
 
     return data
+
+#this function is currently not being used
+def count_down(n: int):
+    array = np.arange(1,n+1,1)
+    backwards_array = array[::-1]
+    for i in backwards_array:
+        print(i)
+        time.sleep(1)
+ 
+def random_anime(json_data) -> str:
+    anime_data = json_data
+    choice = random.choice(list(anime_data.keys()))
+    print(f'"{str(choice)}"')
+    
+    return choice

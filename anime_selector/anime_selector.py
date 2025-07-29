@@ -2,9 +2,12 @@ import json
 import os
 import anime_functions 
 
+
 with open('anime_data.json', 'r') as file:
     data = json.load(file)
 
+#options are mac or linux. this is used later to determine how to open the link to the episode. xdg-open or open.
+system="mac"
 
 # class entry:
 #     def __init__(self, name: str , link: str, updated, base_url_index: int, episode_count: int):
@@ -48,13 +51,20 @@ selection = input()
 
 if selection == "help":
     print('''
-        options are:
+        options ared:
         - list
         - add anime
         - <name>
         - remove 
         ''')
 
+if selection == 'surprise me':
+    print("you betcha!")
+    anime_functions.count_down(3)
+
+    #call random anime function
+    selection = anime_functions.random_anime(json_data=data)
+    
 if selection == 'list':
     print("We can watch:")
     for entry in data:
@@ -89,8 +99,11 @@ elif data[selection]:
 
     if decision == "y" or decision == "Y":
 
-        #get link and open it   
-        os.system(f'xdg-open "{updated_link}"')
+        #get link and open it
+        if system == "mac":
+            os.system(f'open "{updated_link}"')
+        elif system == "linux":
+            os.system(f'xdg-open "{updated_link}"')
         print("enjoy the show :)")
 
     else:

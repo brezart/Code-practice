@@ -4,16 +4,13 @@
         "link": "https://9animetv.to/watch/ranma-876?ep=",
         "updated": "placeholder",
         "base_url_index": 15094,
-        "episode_count": "4"
-    },
-    "bleach": {
-        "link": "google.com/bleach"
+        "episode_count": "10"
     },
     "demon slayer": {
         "type": "shonen",
         "link": "https://9animetv.to/watch/demon-slayer-kimetsu-no-yaiba-47?ep=",
-        "udpated": "Sun Jul 20 21:47:45 EDT 2025\n",
+        "updated": "Sun Jul 20 21:47:45 EDT 2025",
         "base_url_index": 1279,
-        "episode_count": "0"
+        "episode_count": "1"
     }
 }
