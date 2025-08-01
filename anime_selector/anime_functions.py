@@ -14,14 +14,15 @@ def gather_data():
     type = input()
 
     print("enter link:")
-    link = input()
+    link = str(input())
 
     command = ['date']
     result = subprocess.run(command, capture_output=True, text=True, check=True)
     updated = result.stdout
 
-    print("enter base_url_index")
-    base_url_index = int(input())
+    #setup link and get base_url_index from full link
+    link, base_url_index = link.split("=")
+    link = link + "="
 
     print("enter episide count:")
     ep_count= input()
@@ -79,3 +80,9 @@ def random_anime(json_data) -> str:
     print(f'"{str(choice)}"')
     
     return choice
+
+def update_ep_count(episode_count: str, link: str):
+    ep_count_int = int(episode_count)
+    ep_count_int += 1
+    episode_count = str(ep_count_int)
+    return episode_count   

@@ -4,7 +4,7 @@
         "link": "https://9animetv.to/watch/ranma-876?ep=",
         "updated": "placeholder",
         "base_url_index": 15094,
-        "episode_count": "10"
+        "episode_count": "12"
     },
     "demon slayer": {
         "type": "shonen",
@@ -12,5 +12,33 @@
         "updated": "Sun Jul 20 21:47:45 EDT 2025",
         "base_url_index": 1279,
         "episode_count": "1"
+    },
+    "dan da dan": {
+        "type": "shonen",
+        "link": "https://9animetv.to/watch/dan-da-dan-19319?ep=",
+        "updated": "Thu Jul 31 21:49:28 EDT 2025\n",
+        "base_url_index": 128368,
+        "episode_count": "0"
+    },
+    "whats wrong with my big brother": {
+        "type": "comedy",
+        "link": "https://9animetv.to/watch/whats-wrong-with-my-big-brother-18271?ep=",
+        "updated": "Thu Jul 31 21:51:02 EDT 2025\n",
+        "base_url_index": 97040,
+        "episode_count": "0"
+    },
+    "sakura trick": {
+        "type": "romance",
+        "link": "https://9animetv.to/watch/sakura-trick-3465?ep=",
+        "updated": "Thu Jul 31 21:52:05 EDT 2025\n",
+        "base_url_index": 33667,
+        "episode_count": "0"
+    },
+    "yuru yuri": {
+        "type": "slice of life",
+        "link": "https://9animetv.to/watch/yuruyuri-happy-go-lily-1255?ep=",
+        "updated": "Thu Jul 31 21:53:56 EDT 2025\n",
+        "base_url_index": 18502,
+        "episode_count": "0"
     }
 }
