@@ -87,20 +87,20 @@ def delete(data):
     return data
 
 #Updates episode count variable and returns it as output
-def update_ep_count(episode_count: str, link: str):
+def update_ep_count(episode_count: str, link: str) -> str:
     ep_count_int = int(episode_count)
     ep_count_int += 1
     episode_count = str(ep_count_int)
     return episode_count   
 
 #Constructs new link for next episode from base url index and episode count
-def generate_new_link(base_url_index: int, link: str, episode_count: str):
+def generate_new_link(base_url_index: int, link: str, episode_count: str) -> str:
     updated_link_ending = base_url_index + int(episode_count) - 1 #minus 1 because the ep count indexes from 0 and the base index indexes from 1 ie the base url index is the index for episode 1
     new_link = link + str(updated_link_ending)    
     return new_link
 
 #Asks user to confirm selection and then opens in browser
-def get_confirmation_and_open_link(selection, system: str, updated_link: str):
+def get_confirmation_and_open_link(selection, system: str, updated_link: str) -> None:
     print("found your selection", selection)
     print("do you want to watch it? Y/n")
     decision = input()
@@ -117,3 +117,18 @@ def get_confirmation_and_open_link(selection, system: str, updated_link: str):
     else:
 
         print("okay we won't watch that one")
+
+
+#store options for cli tool
+options = ["list", "add", "help", "delete", "surprise me"]
+
+#get user selection
+def accept_selection() -> None:
+    for option in options:
+        print("-" + option)
+    selection = input()
+    return selection
+
+def help() -> None:
+    for option in options:
+        print("-" + option)
