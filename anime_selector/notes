@@ -8,3 +8,6 @@ still needs to be able to:
 - allow users to track their time of watch session or how many episodes their watched
 - let the user see a flow chart for their most watched anime in a week - calendar api? - visualization package?
 - let users discover new anime - tough problem - no immediate solution. 
+- fancy graphics? 
+- dare I say ...  a logo?
+- switch to argparse module to replace case logic and gain automatic help and usage commands 
