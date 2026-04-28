@@ -5,3 +5,6 @@ still needs to be able to:
 - add a surprise me option that chooses the next epp of one of the entries in the dict
 - update each field in the entry like adding a new link
 - clean up the god-awful python implementation. 
+- allow users to track their time of watch session or how many episodes their watched
+- let the user see a flow chart for their most watched anime in a week - calendar api? - visualization package?
+- let users discover new anime - tough problem - no immediate solution. 
